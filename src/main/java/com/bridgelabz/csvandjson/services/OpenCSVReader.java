@@ -1,4 +1,4 @@
-package com.bridgelabz.csvandjson;
+package com.bridgelabz.csvandjson.services;
 
 import com.opencsv.CSVReader;
 
@@ -10,7 +10,7 @@ import java.nio.file.Paths;
 public class OpenCSVReader {
     private static final String SAMPLE_CSV_FILE_PATH = "./users.csv";
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         try (
                 Reader reader = Files.newBufferedReader(Paths.get(SAMPLE_CSV_FILE_PATH));
                 CSVReader csvReader = new CSVReader(reader)
